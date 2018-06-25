@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<h2>Arrays Assignment</h2>
+<body>
+    <script>
+        const gotCitiesCSV = "King's Landing,Braavos,Volantis,Old Valyria,Free Cities,Qarth,Meereen";
+        const lotrCitiesArray = ["Mordor","Gondor","Rohan","Beleriand","Mirkwood","Dead Marshes","Rhun","Harad"];
+        const bestThing = "The best thing about a boolean is even if you are wrong you are only off by a bit"
+
+
+        var GOTarray = JSON.stringify(gotCitiesCSV.split(","))
+        document.write(GOTarray)
+        document.write("<br>")
+        
+        var ThingArray = JSON.stringify(bestThing.split(" "))
+        document.write(ThingArray)
+        document.write("<br>")
+
+        var GOTstring = (gotCitiesCSV.split (",")) 
+        document.write(GOTstring.join(";"))
+        document.write("<br>")
+        
+        var LOTRstring = (lotrCitiesArray.join(","))
+        document.write(LOTRstring)
+        document.write("<br>")
+
+
+        var lotr = ["Mordor","Gondor","Rohan","Beleriand","Mirkwood","Dead Marshes","Rhun","Harad"];
+        var LORTslice = (lotr.slice("3"))
+        document.write(LORTslice)
+        document.write("<br>")
+
+
+        lotr = ["Mordor","Gondor","Rohan","Beleriand","Mirkwood","Dead Marshes","Rhun","Harad"]
+        var LOTRcomplete = (lotr.splice(0,2).concat(1,5)
+        JSON.stringify(LOTRcomplete)
+        document.write(LORTsplice)
+
+    </script>
+</body>
+</html>
