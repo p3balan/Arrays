@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <h2>Arrays Assignment</h2>
+<p>Im taking the L and not doing #9</p>
 <body>
     <script>
         const gotCitiesCSV = "King's Landing,Braavos,Volantis,Old Valyria,Free Cities,Qarth,Meereen";
@@ -37,10 +38,47 @@
         document.write("<br>")
 
 
-        // lotr = ["Mordor","Gondor","Rohan","Beleriand","Mirkwood","Dead Marshes","Rhun","Harad"]
-        // var LOTRcomplete = (lotr.splice(0,2).concat(1,5)
-        // JSON.stringify(LOTRcomplete)
-        // document.write(LORTsplice)
+        lotr = ["Mordor","Gondor","Rohan","Beleriand","Mirkwood","Dead Marshes","Rhun","Harad"]
+        var LORTcomplete = (lotr.splice(0,2).concat(lotr.splice(1,5)))
+        document.write(LORTcomplete)
+        document.write("<br>")
+
+
+        var ThingSlice = (bestThing.slice(23,38))
+        document.write(ThingSlice)
+        document.write("<br>")
+
+        
+
+        var ThingSlice2 = (bestThing.slice(63,68))
+        document.write(ThingSlice2)
+        document.write("<br>")
+
+
+        // gotCitiesCSV = "King's Landing","Braavos","Volantis","Old Valyria","Free Cities","Qarth,Meereen";
+        // function checkVowels(gotCitiesCSV) {
+        // return gotCitiesCSV >= "aa", "ee"}
+        // // function myFunction() {
+        // // document.getElementById("demo").innerHTML = gotCitiesCSV.filter(checkVowels);
+        // // }
+        // // document.write("<br>")
+        // for(var i = 0; i < gotCitiesCSV; i++
+        // )
+        // {
+        //     if(gotCitiesCSV == "aa" && "ee")
+        // }
+
+
+
+
+        var lotrSort = (lotrCitiesArray.sort(function(b,a){
+        return b.length - a.length}))
+        document.write(lotrSort)
+
+
+    
+
+        
 
     </script>
 </body>
