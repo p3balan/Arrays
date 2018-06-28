@@ -48,25 +48,30 @@
         document.write(ThingSlice)
         document.write("<br>")
 
-        
-
-        var ThingSlice2 = (bestThing.slice(63,68))
-        document.write(ThingSlice2)
+        var IndexNumber = bestThing.indexOf("only");
+        document.write(IndexNumber)
         document.write("<br>")
 
 
-        // gotCitiesCSV = "King's Landing","Braavos","Volantis","Old Valyria","Free Cities","Qarth,Meereen";
-        // function checkVowels(gotCitiesCSV) {
-        // return gotCitiesCSV >= "aa", "ee"}
-        // // function myFunction() {
-        // // document.getElementById("demo").innerHTML = gotCitiesCSV.filter(checkVowels);
-        // // }
-        // // document.write("<br>")
-        // for(var i = 0; i < gotCitiesCSV; i++
-        // )
-        // {
-        //     if(gotCitiesCSV == "aa" && "ee")
-        // }
+
+        var GotCities = gotCitiesCSV.split(",")
+        var gotCtitiesNew = []
+        
+        for(var i = 0; i < GotCities.length; i++) {
+            var city = GotCities[i];
+            if(city.includes("aa") || city.includes("ee") || city.includes("oo" || city.includes("ii")
+            || city.includes("uu"))){
+            
+                gotCtitiesNew.push(city)
+            }
+
+            
+
+
+        }
+        
+        document.write(JSON.stringify(gotCtitiesNew))
+        document.write("<br>")
 
 
 
